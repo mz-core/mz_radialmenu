@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mz_radialmenu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="radial" class="radial is-hidden" aria-hidden="true" tabindex="-1">
+      <div class="radial-stage">
+        <svg id="wheel" class="radial-wheel" viewBox="0 0 400 400" role="group" aria-label="Menu radial">
+          <g id="sectors"></g>
+        </svg>
+        <button id="center" class="radial-center" type="button" aria-label="Fechar">
+          <span id="center-icon" class="radial-center-icon" aria-hidden="true"></span>
+          <strong id="title" class="radial-center-title">Ações rápidas</strong>
+          <small id="hint" class="radial-center-hint">Selecione uma ação</small>
+        </button>
+        <p id="caption" class="radial-caption is-hidden" aria-live="polite"></p>
+      </div>
+    </main>
+    <script src="lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
